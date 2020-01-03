@@ -1,0 +1,29 @@
+aside#asi-left{
+  width: 200px;
+  border: 1px solid black;
+}
+
+aside#asi-left>ul{
+  list-style: none;
+  padding-left: 5px;
+}
+aside#asi-left>ul li a{
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+aside#asi-left>ul li{
+  background-color: black;
+}
+aside#asi-left>ul li a:hover{
+  color:gray;
+  background-color: coral;
+}
+
+label{
+  width: 100px;
+  display: inline-block;
+}
+input{
+  width: 200px;
+}
