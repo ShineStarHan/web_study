@@ -63,15 +63,15 @@ section{
 section article{
   margin-bottom: 10px;
 }
+
 section img{
-  width: 640px;
-  height: 800px;
-}
-section#sec-intro>img{
   width: 288px;
   height: 287px;
+  float: left;
 }
-
+article>fieldset{
+  width: 350px;
+}
 section>h1{
   text-align: center;
   margin-right: 280px;

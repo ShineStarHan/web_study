@@ -63,15 +63,20 @@ section{
 section article{
   margin-bottom: 10px;
 }
-section img{
-  width: 640px;
-  height: 800px;
-}
+
 section#sec-intro>img{
   width: 288px;
   height: 287px;
 }
 
+article#art-intro{
+  float: left;
+}
+article>p{
+  font-size: 25px;
+  font-weight: bold;
+
+}
 section>h1{
   text-align: center;
   margin-right: 280px;
