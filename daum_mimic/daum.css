@@ -1,0 +1,918 @@
+.div-center {
+  width: 1080px;
+  margin: 0 auto;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+ul li {
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: lightgray;
+}
+
+a {
+  font-size: 13px;
+  color: #333;
+  text-decoration: none;
+}
+
+/* header */
+#header-center {
+  height: 150px;
+}
+
+#search-input {
+  display: inline-block;
+  width: 415px;
+  height: 26px;
+  border: none;
+  outline: none;
+  padding: 0px;
+  transform: translateY(-15px);
+  margin-bottom: 0px;
+}
+
+#channel-tab {
+  position: relative;
+}
+
+#channel-tab ul {
+  position: absolute;
+  top: 17px;
+}
+
+a#start-page {
+  padding: 0px;
+  margin-left: 41px;
+  display: block;
+  font-size: 11px;
+  color: #888;
+}
+
+#logo-search {
+  position: relative;
+  width: 100%;
+  height: 94px;
+}
+
+#daum-logo {
+  width: 180px;
+  height: 94px;
+  display: inline-block;
+}
+
+#search-box {
+  position: absolute;
+  display: inline-block;
+  width: 520px;
+  height: 46px;
+  top: 24px;
+}
+
+#search-box a {
+  font-size: 12px;
+  color: #555;
+}
+
+#hot-button {
+  display: inline-block;
+  margin-left: 104px;
+}
+
+#search-box fieldset {
+  width: 506px;
+  height: 46px;
+  padding: 0 0 0 11px;
+  border: 1px solid #0089ff;
+}
+
+#real-time-part h4 {
+  padding: 2px 0 6px;
+  font-size: 13px;
+  color: #118eff;
+  margin: 0;
+}
+
+a#a-inputer span {
+  display: inline-block;
+  width: 29px;
+  height: 42px;
+  background-position: 0 0;
+  background-image: url(https://t1.daumcdn.net/daumtop_deco/images/top/2017/img_keyboard_171229.png);
+}
+
+a#a-searcher span {
+  display: inline-block;
+  width: 49px;
+  height: 42px;
+  background-position: -40px -231px;
+  background-image: url(https://t1.daumcdn.net/daumtop_deco/images/top/2017/ico_pctop_190618_v2.png);
+}
+
+/* end of header */
+/* nav */
+nav {
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #555;
+}
+
+#nav-center {
+  position: relative;
+  height: 45px;
+}
+
+#tab-category {
+  display: inline-block;
+  width: 668px;
+  height: 45px;
+}
+
+#tab-category ul a {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#tab-category ul>li {
+  margin-right: 3px;
+}
+
+#tab-category ul {
+  position: absolute;
+  top: 3px;
+  top: 11px;
+  margin-left: 42px;
+}
+
+#weather-tab {
+  position: relative;
+  display: inline-block;
+  height: 46px;
+  float: right;
+  margin-top: 9px;
+  right: 44px;
+}
+
+#weather-tab span {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#weather-icon {
+  width: 22px;
+  height: 22px;
+  background-image: url(https://t1.daumcdn.net/daumtop_deco/images/top/2017/img_weather_170628.png);
+  background-position: -2px -242px;
+}
+
+#weather-degree {
+  width: 17px;
+  height: 15px;
+  background-image: url(https://t1.daumcdn.net/daumtop_deco/images/top/2017/img_weather_170628.png);
+  background-position: -210px -270px;
+}
+
+/* end of nav */
+/* main  */
+#main-center {
+  width: 990px;
+  height: 1750px;
+}
+
+.tab-font ul li a {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.tab-font a {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#banner-login {
+  position: relative;
+  height: 120px;
+  width: 100%;
+  margin-top: 13px;
+}
+
+#blog-tab {
+  position: relative;
+}
+
+#blog-tab>ul {
+  position: absolute;
+  top: 9px;
+}
+
+#banner-login>img {
+  display: inline-block;
+  width: 652px;
+  height: 120px;
+}
+
+/* #inner-login{
+    float: right;
+    width: 300px;
+    height: 120px;
+    display: inline-block;
+    background: url(https://t1.daumcdn.net/daumtop_deco/images/top/2017/bg_login_190612.png) 0 -230px no-repeat;
+} */
+#login-box {
+  top: -124px;
+  float: right;
+  position: relative;
+  width: 270px;
+  height: 77px;
+  display: block;
+  padding: 13px 15px 30px;
+  background: url(https://t1.daumcdn.net/daumtop_deco/images/top/2017/bg_login_190612.png) 0 -230px no-repeat;
+}
+
+#weather-tab .adjust-li {
+  transform: translateY(-4px);
+}
+
+#kakaotv-tab .kakao-adjust {
+  transform: translateY(-13px);
+}
+
+#kakaotv-tab .adjust-li {
+  transform: translateY(-13px);
+  margin-left: 91px;
+}
+#nav-center #weather-tab:hover #mini-weather{
+  display: inline-block;
+}
+
+#mini-weather {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 36px;
+    right: -1px;
+  width: 298px;
+  border: 1px solid #888;
+  background-color: #fff;
+}
+
+#mini-weather #weather-local {
+  display: block;
+  height: 20px;
+  margin: 17px 0 0 22px;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+#today-icon {
+  float: left;
+  width: 90px;
+  height: 90px;
+  margin-left: 22px;
+  background-image: url("https://t1.daumcdn.net/daumtop_deco/images/top/2017/ico_wm_1801023.png");
+  background-position: -700px -100px;
+}
+
+span.today-base {
+  float: left;
+  width: 22px;
+  height: 32px;
+  margin-top: 26px;
+  display: block;
+  background-image: url("https://t1.daumcdn.net/daumtop_deco/images/top/2017/img_weather_170628.png");
+}
+
+span#today-degree-pop {
+  background-position: -260px -200px;
+}
+
+span#today-degree-icon {
+  width: 39px;
+  height: 32px;
+  background-position: -210px -292px;
+}
+
+span#weather-detail {
+  display: block;
+  line-height: 16px;
+  position: absolute;
+  bottom: 75px;
+  left: -17px;
+}
+
+a.air-polution {
+  float: left;
+  display: block;
+  width: 50%;
+  height: 39px;
+  color: #101010;
+  text-decoration: none;
+}
+
+span.air-condition-icon {
+  margin: 0 0 0 23px;
+    transform: translateY(6px);
+      display: inline-block;
+  background-image: url("https://t1.daumcdn.net/daumtop_deco/images/top/2017/img_weather_170628.png");
+}
+
+span#now-condition {
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
+  margin-right: 6px;
+  background-position: -140px -240px;
+}
+span.red-line{
+  color: red;
+}
+span#total-condition {
+  width: 21px;
+  height: 21px;
+
+  background-position: -140px -264px;
+}
+#today-weather{
+  height: 135px;
+}
+#mini-weather-footer{
+  height: 40px;
+}
+#mini-weather-footer span.air-status-text{
+  height: 22px;
+    padding-top: 8px;
+    line-height: 21px;
+}
+span#weather-detail span {
+  float: left;
+  margin-right: 2px;
+  display: block;
+  margin: 7px 0 0 130px;
+  line-height: 16px;
+}
+
+#login-box a {
+  display: block;
+}
+
+#daum-login {
+  display: block;
+  height: 35px;
+  padding-left: 1px;
+  border: 1px solid #e9e9e9;
+  font-size: 13px;
+  line-height: 33px;
+  background-color: #fff;
+  text-align: center;
+}
+
+#kakao-login {
+  display: block;
+  height: 35px;
+  margin-top: 4px;
+  padding-left: 4px;
+  border: 1px solid #e9e9e9;
+  font-size: 13px;
+  line-height: 33px;
+  background-color: #fff;
+  text-align: center;
+}
+
+#a-join {
+  position: absolute;
+  right: 15px;
+  bottom: 9px;
+  color: #555;
+  font-size: 11px;
+}
+
+#daum-login>span {
+  display: inline-block;
+  width: 12px;
+  height: 13px;
+  margin: 11px 5px 0 0;
+  vertical-align: top;
+  background: url(https://t1.daumcdn.net/daumtop_deco/images/top/2019/ico_pctop_login_191017.png) no-repeat;
+  background-position: 0 -24px;
+}
+
+#kakao-login>span {
+  background: url(https://t1.daumcdn.net/daumtop_deco/images/top/2019/ico_pctop_login_191017.png) no-repeat;
+  background-position: -16px -24px;
+  display: inline-block;
+  width: 12px;
+  height: 13px;
+  margin: 11px 5px 0 0;
+  vertical-align: top;
+}
+
+#news-entertain-section div {
+  display: inline-block;
+}
+
+#news-category {
+  position: relative;
+  height: 57px;
+  width: 100%;
+}
+
+#news-category>a {
+  display: inline-block;
+}
+
+#news-category ul {
+  position: absolute;
+  top: 18px;
+}
+
+#media-box {
+  position: relative;
+  width: 655px;
+  height: 1590px;
+}
+
+#news-entertain-section {
+  width: 655px;
+  height: 562px;
+  position: relative;
+}
+
+#news-wrap {
+  width: 501px;
+  height: 438px;
+}
+
+#news-wrap img {
+  width: 154px;
+  height: 94px;
+}
+
+#group-news {
+  width: 487px;
+  height: 292px;
+}
+
+#box-sector {
+  width: 154px;
+  height: 292px;
+}
+
+#box-sector>ul>li {
+  margin-bottom: 20px;
+}
+
+#news-thumb {
+  width: 501px;
+  height: 146px;
+}
+
+#news-thumb li {
+  float: left;
+  margin-left: 13px;
+}
+
+#news-thumb li a strong {
+  display: inline-block;
+  width: 150px;
+}
+
+#news-flow {
+  position: relative;
+  width: 100%;
+  height: 42px;
+  background-color: #fbfbfb;
+}
+
+#currency-part {
+  margin-top: 42px;
+}
+
+#currency-part img {
+  width: 148px;
+  height: 164px;
+}
+
+#news-flow ul {
+  position: absolute;
+  top: 8px;
+}
+
+#news-flow>a {
+  position: absolute;
+  top: 11px;
+  left: 273px;
+}
+
+#real-time-hot {
+  width: 154px;
+  height: 424px;
+  float: right;
+  position: absolute;
+}
+
+#news-list {
+  position: absolute;
+  display: inline-block;
+  width: 320px;
+  height: 274px;
+}
+
+#news-list a {
+  font-size: 13px;
+  color: #333;
+}
+
+#news-list li {
+  display: block;
+  padding-left: 15px;
+  padding-top: 4px;
+}
+
+#news-thumb .li-no-margin {
+  margin-left: 0px;
+}
+
+#news-list #padding-standard {
+  padding-top: 10px;
+}
+
+#real-time-part {
+  margin-left: 14px;
+}
+
+#real-time-part li {
+  width: 100%;
+  position: relative;
+}
+
+a.rank-num {
+  padding-bottom: 1px;
+  font-size: 13px;
+  color: #333;
+}
+
+a.rank-num>span {
+  background-image: url("https://t1.daumcdn.net/daumtop_deco/images/top/2017/num_pctop_170405.png");
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  transform: translateY(3px);
+}
+
+a#rank-1>span {
+  background-position: 0 0;
+}
+
+a#rank-2>span {
+  background-position: 0 -20px;
+}
+
+a#rank-3>span {
+  background-position: 0 -40px;
+}
+
+a#rank-4>span {
+  background-position: 0 -60px;
+}
+
+a#rank-5>span {
+  background-position: 0 -80px;
+}
+
+a#rank-6>span {
+  background-position: 0 -100px;
+}
+
+a#rank-7>span {
+  background-position: 0 -120px;
+}
+
+a#rank-8>span {
+  background-position: 0 -140px;
+}
+
+a#rank-9>span {
+  background-position: 0 -160px;
+}
+
+a#rank-10>span {
+  background-position: 0 -180px;
+}
+
+/* end of news-section */
+#kakaotv-section {
+  width: 655px;
+  height: 218px;
+}
+
+li#kakaotv-logo>a {
+  display: inline-block;
+  width: 82px;
+  height: 36px;
+  background-image: url("https://t1.daumcdn.net/daumtop_deco/images/top/2017/txt_pctop_190111.png");
+  background-position: -380px -80px;
+}
+
+#tv-content ul {
+  width: 655px;
+  height: 146px;
+}
+
+#tv-content ul li {
+  float: left;
+  width: 154px;
+  height: 146px;
+  margin-left: 8px;
+}
+
+#tv-content ul li a img {
+  display: inline-block;
+  width: 154px;
+  height: 94px;
+}
+
+#tv-content .li-no-margin {
+  margin-left: 0px;
+}
+
+#blog-content {
+  width: 655px;
+  height: 170px;
+  position: relative;
+}
+
+#blog-content img {
+  display: inline-block;
+  width: 154px;
+  height: 94px;
+}
+
+#blog-content ul li {
+  float: left;
+  width: 154px;
+  height: 160px;
+  margin-left: 8px;
+}
+
+#blog-tab {
+  width: 655px;
+  height: 39.5px;
+}
+
+#blog-content ul {
+  width: 655px;
+  height: 160px;
+}
+
+#blog-content .li-no-margin {
+  margin-left: 0px;
+}
+
+#blog-content ul li a span {
+  display: block;
+}
+
+#channel-section {
+  width: 655px;
+  height: 568px;
+}
+
+.channel-content {
+  width: 655px;
+  height: 159px;
+}
+
+#channel-best {
+  width: 642px;
+  height: 159px;
+  background-color: #ececec;
+}
+
+.channel-content li {
+  width: 154px;
+  height: 160px;
+  margin-right: 8px;
+  float: left;
+}
+
+.channel-content li img {
+  display: inline-block;
+  width: 154px;
+  height: 94px;
+}
+
+#channel-best h4 {
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+
+#channel-best ul li img {
+  width: 148px;
+  height: 108px;
+}
+
+#channel-best .text-in-img {
+  position: absolute;
+  left: 1px;
+  top: 80px;
+  color: white;
+}
+
+#channel-tab {
+  height: 60px;
+}
+
+li.best-content-box {
+  position: relative;
+  width: 154px;
+  height: 160px;
+  display: inline-block;
+  float: left;
+}
+
+.best-list {
+  float: left;
+  width: 295px;
+  padding: 0 0 3px 13px;
+  transform: translateY(-3px);
+}
+
+#wing-style {
+  width: 300px;
+  height: 1590px;
+  float: right;
+  position: absolute;
+  top: 1px;
+  right: -335px;
+}
+
+#ad-img img {
+  width: 300px;
+  height: 150px;
+}
+
+#hot-keyword {
+  width: 533px;
+}
+
+#shop-section {
+  width: 300px;
+  height: 777px;
+}
+
+#news-category .adjust-li {
+  margin-left: 319px;
+}
+}
+
+#topic-wrap {
+  position: relative;
+  width: 100%;
+  height: 610px;
+}
+
+#main-photo {
+  width: 100%;
+  position: relative;
+  height: 400px;
+}
+
+#channel-tab .adjust-li {
+  margin-left: 64px;
+}
+
+#blog-tab .adjust-li {
+  margin-left: 250px;
+}
+
+#detail-photo {
+  width: 680px;
+  height: 398px;
+  position: relative;
+  margin: 0 2px 0 2px;
+  float: left;
+}
+
+#detail-photo img {
+  width: 680px;
+  height: 398px;
+}
+
+#detail-photo a {
+  position: relative;
+  background-image: url("https://t1.daumcdn.net/daumtop_deco/images/top/2017/bg_plate_slide.png");
+  height: 70px;
+  background-position: 0 0;
+}
+
+.photo-button>img {
+  width: 152px;
+  height: 398px
+}
+
+#photo-pre {
+  float: left;
+}
+
+#slide-photo {
+  margin-top: 14px;
+}
+
+#slide-photo img {
+  width: 989px;
+}
+
+li.up-list {
+  transform: translateY(-8px);
+}
+
+#photo-zone {
+  width: 100%;
+  height: 611px;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid black;
+}
+
+#topic-wrap {
+  position: relative;
+  width: 990px;
+  margin: 0 auto;
+}
+
+#foot-wrap {
+  position: relative;
+  width: 990px;
+  margin: 0 auto;
+  padding: 37px 0 78px;
+}
+
+#mini-icon {
+  float: left;
+}
+
+#mini-icon>img {
+  width: 52px;
+  height: 22px;
+  display: block;
+  vertical-align: top;
+}
+
+.info-notice {
+  padding: 0 250px 0 30px;
+}
+
+.title-notice {
+  float: left;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+}
+
+#a-notice {
+  display: block;
+  padding-right: 9px;
+  margin-left: 14px;
+  transform: translateY(3px);
+}
+
+#notice-list {
+  width: 542px;
+  height: 19px;
+  margin-bottom: 26px;
+  padding-left: 9px;
+}
+
+#link-service {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  padding-right: 10px;
+  font-weight: bold;
+  color: #888;
+  background-position: 100% -194px;
+}
+
+small {
+  display: block;
+  padding-top: 6px;
+  font-size: 11px;
+  color: #888;
+}
+
+.info-policy {
+  padding: 0px 250px 0 0;
+  font-size: 12px;
+  line-height: 20px;
+  color: #888;
+}
