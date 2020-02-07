@@ -1,0 +1,137 @@
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#title#title#title#title#title {
+    font-size: 24px;
+}
+
+#joinCenter{
+    width: 890px;
+    margin: 0 auto;
+}
+
+#join_content {
+    padding-left: 70px;
+}
+
+#joinCenter h4{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+input{
+    width: 400px;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+span.innerText{
+    /* color: gray; */
+    font-size: 17px;
+    display: inline-block;
+    width: 120px;
+}
+fieldset{
+    width: 633px;
+    margin-bottom: 18px;
+    border: 1px solid white;
+}
+#mailBox fieldset{
+    display: inline-block;
+}
+#mailBox span{
+    width: 120px;
+}
+#mailBox input{
+    width: 200px;
+}
+#emailField {
+    width: 273px;
+}
+#mailBox #emailFieldBack span{
+    width: 85px;;
+}
+#emailFieldBack{
+    width: 300px;
+    height: 31px;
+}
+#selectMail{
+    width: 178px;
+    height: 32px;
+    font-size: 20px;
+}
+#privacyAgreement input{
+    width: 20px;
+    height: 18px;
+    display: inline-block;
+}
+.bigFont{
+    font-weight: bold;
+    font-size: 15px;;
+   
+}
+#birthField{
+    display: inline-block;
+    width: 350px;
+    text-align: center;
+}
+.genderCheck,.agreeOptions,#agreeAll{
+    width: 30px;
+}
+#requiredInfoTable td,#requiredInfoTable th,#requiredInfoTable tr{
+    width: 180px;
+    text-align: center;
+    border: 1px gray solid;
+    padding: 10px;
+    font-size: 13px;
+}
+#requiredInfoTable,#selectInfoTable{
+    border-collapse: collapse;
+}
+#selectInfoTable td,#selectInfoTable th,#selectInfoTable tr{
+    width: 180px;
+    text-align: center;
+    border: 1px gray solid;
+    padding: 10px;
+    font-size: 13px;
+}
+#joinSubmit,#modifySubmit{
+    width: 200px;
+    height: 50px;
+    margin-left: 300px;
+    margin-top: 14px;
+    background-color: lightgray;
+    margin-bottom: 14px;
+    border: 1px solid gray;
+    font-size: 16px;
+}
+
+#birthField select{
+    width: 92px;
+    font-size: 18px;
+}
+#otherMail{
+    position: relative;
+    top: 2px;
+    float: right;
+    right: 76px;
+}
+#privacyAgreement{
+    margin-bottom: 10px;
+}
+#genderBox{
+    margin-bottom: 10px;
+}
+#agreeAll>span{
+    font-size: 20px;
+    font-weight: bold;
+}
+#id_confirm{
+    position: relative;
+    top: -2px;
+    width: 95px;
+    height: 30px;
+    font-size: 15px;
+    margin-left: 10px;
+}
