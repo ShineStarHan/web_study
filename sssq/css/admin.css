@@ -28,3 +28,18 @@
 #board_list li { padding: 10px 0; border-bottom: solid 1px #dddddd; }
 #board_list span { display: inline-block; text-align: center; }
 #board_list button { margin: 20px 0 0 20px; padding: 5px 10px;}
+#side_navi{
+    position: relative;
+    float: left;
+}
+#side_navi li{
+    border: 1px black solid;
+    margin: 5px;
+}
+#side_navi a span{
+    font-size: 15px;
+    font-weight: bold;
+}
+section{
+    position: relative;
+}

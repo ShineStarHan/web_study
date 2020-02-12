@@ -40,14 +40,14 @@ fieldset{
 #mailBox fieldset{
     display: inline-block;
 }
-#mailBox span{
-    width: 120px;
+#mailBox .innerText{
+    width: 117px;
 }
 #mailBox input{
     width: 200px;
 }
 #emailField {
-    width: 273px;
+    width: 326px;
 }
 #mailBox #emailFieldBack span{
     width: 85px;;

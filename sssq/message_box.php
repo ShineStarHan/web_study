@@ -67,7 +67,7 @@
 
                 $start = ($page-1)*$scale;
                 $number=$total_record-$start;
-
+                
                 for($i=$start;$i<$start+$scale && $i<$total_record;$i++){
                     mysqli_data_seek($result,$i);
                     $row=mysqli_fetch_array($result);

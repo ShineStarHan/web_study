@@ -98,7 +98,6 @@
                     </fieldset>
                     <span>@</span>
                     <fieldset id="emailFieldBack">
-                        <span class="innerText">이메일주소</span>
                         <select name="mail2" id="selectMail" onchange="setOhterMail()">
                             <option value="naver.com" <?=$email3[0]?>>naver.com</option>
                             <option value="daum.com" <?=$email3[1]?>>daum.net</option>
@@ -109,7 +108,9 @@
                         <input type="text" id="otherMail" name="directMail" style="display: none" value=<?=$email2?>>
                     </fieldset>
                 </div>
-                <h1>선택항목</h1>
+                <br>
+                <h2>선택항목</h2>
+                <hr>
                 <div>
                     <label for="birthDay">생년월일
                     <fieldset id="birthField">
@@ -138,7 +139,9 @@
                     </div>
 
                 </div>
+                <br>
                 <h1>개인정보 수집 및 이용</h1>
+                <br>
                 <table id="selectInfoTable">
                     <tr>
                         <th>구분</th>
@@ -162,7 +165,7 @@
     </div>
 	</section> 
 	<footer>
-    	<?php include "footer.php";?>
+        <?php include "footer.php";?>
     </footer>
 </body>
 </html>

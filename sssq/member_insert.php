@@ -21,7 +21,7 @@
         $optional .= $optionAgree[$i]." ";
     }
     
-    $sql="insert into mem values ('$id','$pw','$name','$email','$resist','$essential','$gender','$optional','$birth')";
+    $sql="insert into mem values ('$id','$pw','$name','$email','$resist','$essential','$gender','$optional','$birth',default,default)";
     mysqli_query($con,$sql);
     mysqli_close($con);
     echo "<script>

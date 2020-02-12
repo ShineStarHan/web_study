@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $mode=$_GET["mode"];
     $num=$_GET["num"];
     $page=$_GET["page"];
@@ -84,6 +85,16 @@
             ";
         break;
         case "update":
+            
+            if($_GET["id"]!=$_SESSION["id"]){
+                echo("
+                            <script>
+                            alert('작성자만이 이용할 수 있습니다.');
+                            history.go(-1)
+                            </script>
+                        ");
+                        exit;
+            }
             $subject=$_POST["subject"];
             $content=$_POST["content"];
         

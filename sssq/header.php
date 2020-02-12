@@ -43,7 +43,7 @@
             <ul>  
                 <li><a href="index.php">HOME</a></li>
                 <li><a href="message_form.php">쪽지 보내기</a></li>                                
-                <li><a href="board_form.php">게시판 입장</a></li>
-                <li><a href="index.php">형제 사이트</a></li>
+                <li><a href="board_list.php">게시판 입장</a></li>
+                <li><a href="qna_list.php">Q&A</a></li>
             </ul>
         </div>

@@ -55,8 +55,8 @@
     
 }
 .slide_indicator a{
-    width: 8px;
-    height: 8px;
+    width: 9px;
+    height: 9px;
     display: inline-block;
     background: url("./img/sprites.png") no-repeat -114px -4px;
     margin-right: 10px;

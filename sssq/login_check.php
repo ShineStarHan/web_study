@@ -22,6 +22,4 @@
         echo "<script>location.href='login_form.php';</script>";
     }
      mysqli_close($con);
-
-
 ?>

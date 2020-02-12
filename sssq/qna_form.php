@@ -40,32 +40,55 @@
     <div id="board_box">
         <h3 id="board_box">
             <?php
-            if(isset($_GET["mode"])){
+            if(isset($_GET["mode"])&&$_GET["mode"]=="update"){
+                if($userid!=$_GET['id']){
+                    echo "<script>alert('작성자만이 수정할 수 있습니다');history.go(-1)</script>";
+                    exit;
+                }
                 $mode=$_GET["mode"];
-                echo "게시판 > 글 수정";
+                echo "Q&A > 글 수정";
                 $num=$_GET["num"];
                 $page=$_GET["page"];
                 $con=mysqli_connect("localhost","root","123456","test");
-                $sql="select * from board where num=$num";
+                $sql="select * from qna where num=$num";
                 $result=mysqli_query($con,$sql);
                 $row=mysqli_fetch_array($result);
                 $subject=$row['subject'];
                 $content=$row['content'];
-                $id=$row['id'];
+                $subject=htmlspecialchars($subject);
+                $content=htmlspecialchars($content);
                 $content=str_replace(" ", "&nbsp", $content);
                 $content=str_replace("\n", "<br>", $content);
-                $file_name=$row['file_name'];
+            }elseif(isset($_GET["mode"])&&$_GET["mode"]=="response"){
+                $mode=$_GET["mode"];
+                echo "Q&A > 답변 쓰기";
+                $num=$_GET["num"];
+                $page=$_GET["page"];
+                $con=mysqli_connect("localhost","root","123456","test");
+                $sql="select * from qna where num=$num";
+                $result=mysqli_query($con,$sql);
+                $row=mysqli_fetch_array($result);
+                $depth=(int)$row['depth'];
+                $content=$row['content'];
+                $subject=$row['subject'];
+                $subject=htmlspecialchars($subject);
+                $content=htmlspecialchars($content);
+                $content=str_replace(" ", "&nbsp", $content);
+                $content=str_replace("\n", "<br>", $content);
+                $subject=str_replace(" ", "&nbsp", $subject);
+                $subject=str_replace("\n", "<br>", $subject);
+                $subject="[re]".$subject;
+                $content="[re]".$content;
             }else{
-                echo "게시판 > 글 쓰기";
+                echo "Q&A > 글 쓰기";
                 $mode="insert";
                 $num=-1;
                 $page=1;
-                $id="";
             } 
             ?>
             
         </h3>
-        <form action="board_insert.php?mode=<?=$mode?>&num=<?=$num?>&page=<?=$page?>&id=<?=$id?>" enctype="multipart/form-data" name="board_form" method="post">
+        <form action="qna.php?mode=<?=$mode?>&num=<?=$num?>&page=<?=$page?>" name="board_form" method="post">
             <ul id="board_form">
                 <li>
                     <span class="col1">이름 : </span>
@@ -94,20 +117,10 @@
                     }
                     ?></textarea></span>
                 </li>
-                <?php
-                    if($mode=="update"){
-                        echo "<li><span id='col1'>현재 파일 : $file_name</span></li>";
-                    }
-                ?>
-                <li>
-                
-                    <span id="col1">첨부 파일</span>
-                    <span id="col2"><input type="file" name="upfile"></span>
-                </li>
             </ul>
             <ul class="buttons">
                 <li> <button type="button" onclick="check_input();">완료</button></li>
-                <li> <button type="button" onclick="location.href='board_list.php'">목록</button></li>
+                <li> <button type="button" onclick="location.href='qna_list.php'">목록</button></li>
             </ul>
 
         </form>

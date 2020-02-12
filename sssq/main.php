@@ -1,9 +1,9 @@
 <div class="slideShow">
     <div class="side_slides">
-      <a href="#"><img src="./img/slide1.jpg" alt="slide-1"></a>
-      <a href="#"><img src="./img/slide2.jpg" alt="slide-2"></a>
-      <a href="#"><img src="./img/slide3.png" alt="slide-3"></a>
-      <a href="#"><img src="./img/slide4.jpg" alt="slide-4"></a>
+      <a href="#"><img src="./img/img1.jpg" alt="slide-1"></a>
+      <a href="#"><img src="./img/img2.jpg" alt="slide-2"></a>
+      <a href="#"><img src="./img/img3.jpg" alt="slide-3"></a>
+      <a href="#"><img src="./img/img4.jpg" alt="slide-4"></a>
     </div>
 
     <div class="slide_nav">
@@ -57,7 +57,7 @@
 <!-- 포인트 랭킹 표시하기 -->
 <?php
     $rank = 1;
-    $sql = "select * from mem order by birth desc limit 5";
+    $sql = "select * from mem order by point desc, birth limit 5";
     $result = mysqli_query($con, $sql);
 
     if (!$result)
@@ -68,7 +68,7 @@
         {
             $name  = $row["name"];        
             $id    = $row["id"];
-            $point = $row["birth"];
+            $point = $row["point"];
             $name = mb_substr($name, 0, 1)." * ".mb_substr($name, 2, 1);
 ?>
                 <li>
